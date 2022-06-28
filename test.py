@@ -8,6 +8,7 @@ if pid == 0:
     r, w = os.pipe()
     os.dup2(r, 0)
     os.close(r)
-    os.write(w, b"GoodDay-lab\x10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\x10")
+    os.write(w, b"goodnight-lab\x10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\x10")
+    print("23")
     os.execlp("git", "pushing", "push", "--set-upstream", 'origin', 'demo')
 os.wait()
